@@ -56,7 +56,8 @@ class DashboardRouter: DashboardPresenterToRouterProtocol {
 //        return view!
         
         //Uncomment if view is based on navigation controller
-        
+        navigation!.modalPresentationStyle = .overFullScreen
+        navigation!.modalTransitionStyle = .crossDissolve
          return navigation!
          
         

@@ -11,11 +11,15 @@
 		924AF7C826C2FC6200B856A4 /* AnimatedCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AF7C726C2FC6200B856A4 /* AnimatedCollectionViewLayout.swift */; };
 		924AF7CA26C308E600B856A4 /* UIAlertController+Addons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AF7C926C308E600B856A4 /* UIAlertController+Addons.swift */; };
 		924AF7CC26C30D9B00B856A4 /* UITableView+Addons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AF7CB26C30D9B00B856A4 /* UITableView+Addons.swift */; };
-		924AF7CF26C310A400B856A4 /* lauchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924AF7CE26C310A400B856A4 /* lauchScreen.storyboard */; };
+		924AF7CF26C310A400B856A4 /* LauchScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924AF7CE26C310A400B856A4 /* LauchScene.storyboard */; };
 		924AF7D226C3117600B856A4 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 924AF7D126C3117600B856A4 /* Lottie */; };
-		924AF7D426C311C500B856A4 /* LauchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AF7D326C311C500B856A4 /* LauchScreenViewController.swift */; };
 		924AF7D726C3129900B856A4 /* nasa.json in Resources */ = {isa = PBXBuildFile; fileRef = 924AF7D626C3129900B856A4 /* nasa.json */; };
-		924AF7D926C3145A00B856A4 /* lauchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AF7D826C3145A00B856A4 /* lauchRouter.swift */; };
+		924AF7E026C3214700B856A4 /* LauchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AF7DA26C3214700B856A4 /* LauchPresenter.swift */; };
+		924AF7E126C3214700B856A4 /* LauchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AF7DB26C3214700B856A4 /* LauchRouter.swift */; };
+		924AF7E226C3214700B856A4 /* LauchProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AF7DC26C3214700B856A4 /* LauchProtocols.swift */; };
+		924AF7E326C3214700B856A4 /* LauchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AF7DD26C3214700B856A4 /* LauchInteractor.swift */; };
+		924AF7E426C3214700B856A4 /* LauchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AF7DE26C3214700B856A4 /* LauchView.swift */; };
+		924AF7E526C3214700B856A4 /* LauchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AF7DF26C3214700B856A4 /* LauchEntity.swift */; };
 		9274B71926BB9C7100C1305E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9274B71826BB9C7100C1305E /* AppDelegate.swift */; };
 		9274B72026BB9C7100C1305E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9274B71E26BB9C7100C1305E /* Main.storyboard */; };
 		9274B72226BB9C7400C1305E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9274B72126BB9C7400C1305E /* Assets.xcassets */; };
@@ -68,10 +72,14 @@
 		924AF7C726C2FC6200B856A4 /* AnimatedCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedCollectionViewLayout.swift; sourceTree = "<group>"; };
 		924AF7C926C308E600B856A4 /* UIAlertController+Addons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Addons.swift"; sourceTree = "<group>"; };
 		924AF7CB26C30D9B00B856A4 /* UITableView+Addons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Addons.swift"; sourceTree = "<group>"; };
-		924AF7CE26C310A400B856A4 /* lauchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = lauchScreen.storyboard; sourceTree = "<group>"; };
-		924AF7D326C311C500B856A4 /* LauchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchScreenViewController.swift; sourceTree = "<group>"; };
+		924AF7CE26C310A400B856A4 /* LauchScene.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LauchScene.storyboard; sourceTree = "<group>"; };
 		924AF7D626C3129900B856A4 /* nasa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nasa.json; sourceTree = "<group>"; };
-		924AF7D826C3145A00B856A4 /* lauchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lauchRouter.swift; sourceTree = "<group>"; };
+		924AF7DA26C3214700B856A4 /* LauchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchPresenter.swift; sourceTree = "<group>"; };
+		924AF7DB26C3214700B856A4 /* LauchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchRouter.swift; sourceTree = "<group>"; };
+		924AF7DC26C3214700B856A4 /* LauchProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchProtocols.swift; sourceTree = "<group>"; };
+		924AF7DD26C3214700B856A4 /* LauchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchInteractor.swift; sourceTree = "<group>"; };
+		924AF7DE26C3214700B856A4 /* LauchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchView.swift; sourceTree = "<group>"; };
+		924AF7DF26C3214700B856A4 /* LauchEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchEntity.swift; sourceTree = "<group>"; };
 		9274B71526BB9C7100C1305E /* SPACEX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPACEX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9274B71826BB9C7100C1305E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9274B71F26BB9C7100C1305E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -139,9 +147,13 @@
 		924AF7CD26C3108800B856A4 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
-				924AF7CE26C310A400B856A4 /* lauchScreen.storyboard */,
-				924AF7D326C311C500B856A4 /* LauchScreenViewController.swift */,
-				924AF7D826C3145A00B856A4 /* lauchRouter.swift */,
+				924AF7CE26C310A400B856A4 /* LauchScene.storyboard */,
+				924AF7DA26C3214700B856A4 /* LauchPresenter.swift */,
+				924AF7DB26C3214700B856A4 /* LauchRouter.swift */,
+				924AF7DC26C3214700B856A4 /* LauchProtocols.swift */,
+				924AF7DD26C3214700B856A4 /* LauchInteractor.swift */,
+				924AF7DE26C3214700B856A4 /* LauchView.swift */,
+				924AF7DF26C3214700B856A4 /* LauchEntity.swift */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -424,7 +436,7 @@
 				9274B72226BB9C7400C1305E /* Assets.xcassets in Resources */,
 				9274B78126BD9D8A00C1305E /* DetailScene.storyboard in Resources */,
 				9274B72026BB9C7100C1305E /* Main.storyboard in Resources */,
-				924AF7CF26C310A400B856A4 /* lauchScreen.storyboard in Resources */,
+				924AF7CF26C310A400B856A4 /* LauchScene.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,16 +499,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924AF7E226C3214700B856A4 /* LauchProtocols.swift in Sources */,
 				9274B77E26BC9B3200C1305E /* Network.swift in Sources */,
 				9274B77C26BC98F000C1305E /* API.swift in Sources */,
-				924AF7D926C3145A00B856A4 /* lauchRouter.swift in Sources */,
 				9274B75F26BB9E7F00C1305E /* DashboardView.swift in Sources */,
 				9274B75D26BB9E7F00C1305E /* DashboardProtocols.swift in Sources */,
 				9274B78926BD9DA300C1305E /* DetailPresenter.swift in Sources */,
+				924AF7E426C3214700B856A4 /* LauchView.swift in Sources */,
 				92B8381926C20AD60060792F /* socialNetworksCell.swift in Sources */,
+				924AF7E526C3214700B856A4 /* LauchEntity.swift in Sources */,
 				9274B76026BB9E7F00C1305E /* DashboardEntity.swift in Sources */,
+				924AF7E026C3214700B856A4 /* LauchPresenter.swift in Sources */,
+				924AF7E126C3214700B856A4 /* LauchRouter.swift in Sources */,
 				9274B78B26BD9DA300C1305E /* DetailProtocols.swift in Sources */,
 				9274B76326BB9EBA00C1305E /* UIStoryboard+Addons.swift in Sources */,
+				924AF7E326C3214700B856A4 /* LauchInteractor.swift in Sources */,
 				92B8381526C20A8C0060792F /* titleBodyCell.swift in Sources */,
 				924AF7C626C2FC2F00B856A4 /* ParallaxAttributesAnimator.swift in Sources */,
 				9274B75E26BB9E7F00C1305E /* DashboardInteractor.swift in Sources */,
@@ -510,7 +527,6 @@
 				9274B71926BB9C7100C1305E /* AppDelegate.swift in Sources */,
 				9274B78E26BD9DA300C1305E /* DetailEntity.swift in Sources */,
 				924AF7C826C2FC6200B856A4 /* AnimatedCollectionViewLayout.swift in Sources */,
-				924AF7D426C311C500B856A4 /* LauchScreenViewController.swift in Sources */,
 				9274B78D26BD9DA300C1305E /* DetailView.swift in Sources */,
 				9274B75B26BB9E7F00C1305E /* DashboardPresenter.swift in Sources */,
 			);

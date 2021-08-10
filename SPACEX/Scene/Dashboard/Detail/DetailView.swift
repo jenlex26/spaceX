@@ -124,7 +124,6 @@ extension DetailView: UITableViewDelegate, UITableViewDataSource {
         
         switch indexPath.row {
         case 3:
-            debugPrint(presenter?.itemSelect?.links?.articleLink)
             let instagramHooks = presenter?.itemSelect?.links?.articleLink ?? ""
             let instagramUrl = NSURL(string: instagramHooks)
             if UIApplication.shared.canOpenURL(instagramUrl! as URL) {
@@ -133,7 +132,6 @@ extension DetailView: UITableViewDelegate, UITableViewDataSource {
                 UIApplication.shared.openURL(NSURL(string: presenter?.itemSelect?.links?.articleLink ?? "")! as URL)
             }
         case 4:
-            debugPrint(presenter?.itemSelect?.links?.videoLink)
             let instagramHooks = presenter?.itemSelect?.links?.videoLink ?? ""
             let instagramUrl = NSURL(string: instagramHooks)
             if UIApplication.shared.canOpenURL(instagramUrl! as URL) {

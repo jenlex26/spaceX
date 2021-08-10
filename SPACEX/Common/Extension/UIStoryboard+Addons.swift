@@ -10,6 +10,7 @@ import UIKit
 
 enum StoryBoard:String {
     
+    case launch = "LauchScene"
     case main   = "Main"
     case detail = "DetailScene"
 

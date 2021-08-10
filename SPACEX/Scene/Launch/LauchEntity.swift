@@ -1,8 +1,8 @@
 //
-//  DashboardEntity.swift
+//  LauchEntity.swift
 //  SPACEX
 //
-//  Created by Javier Hernandez on 04/08/21.
+//  Created by Javier Hernandez on 10/08/21.
 //  
 //
 
@@ -18,7 +18,7 @@ import UIKit
  
  */
 
-struct DashboardResponse: Decodable { //This can be changed to "Codable" protocol if needed
+struct LauchResponse: Decodable { //This can be changed to "Codable" protocol if needed
     var name    : String
     var value   : Int
     var isValid : Bool
@@ -30,3 +30,14 @@ struct DashboardResponse: Decodable { //This can be changed to "Codable" protoco
     }
 }
 
+/*
+ Uncomment if using RealmDatabase
+class LauchDatabase:Object {
+    var name    : String = ""
+    var value   : Int    = 0
+    var isValid : Bool   = false
+    override static func primaryKey() -> String? {
+        return "name"
+    }
+}
+ */
