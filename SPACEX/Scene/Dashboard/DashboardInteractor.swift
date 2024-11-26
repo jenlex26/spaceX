@@ -48,7 +48,7 @@ class DashboardInteractor: DashboardPresenterToInteractorProtocol {
                 }
                 self.presenter?.getLaunches(self.launches)
             case .failure(let error):
-              print("ERROR \(error)")
+                presenter?.showError()
             }
         }
     }

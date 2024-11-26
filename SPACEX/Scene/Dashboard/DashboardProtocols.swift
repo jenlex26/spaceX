@@ -16,12 +16,14 @@ import UIKit
 protocol DashboardPresenterToViewProtocol: AnyObject {
     // PRESENTER -> VIEW
     func getLaunches (_ model: [LaunchPastQuery.Data.LaunchesPast])
+    func showAlert(_ text: String)
 }
 
 protocol DashboardInteractorToPresenterProtocol: AnyObject {
     // INTERACTOR -> PRESENTER
     func getLaunches (_ model: [LaunchPastQuery.Data.LaunchesPast])
     func fecthFilter (list: [LaunchPastQuery.Data.LaunchesPast]?)
+    func showError ()
 }
 
 protocol DashboardPresenterToInteractorProtocol: AnyObject {

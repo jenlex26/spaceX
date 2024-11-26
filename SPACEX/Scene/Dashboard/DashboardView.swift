@@ -120,6 +120,14 @@ extension DashboardView: UISearchResultsUpdating, UISearchBarDelegate {
 }
 
 extension DashboardView: DashboardPresenterToViewProtocol {
+    func showAlert(_ text: String) {
+        let alert = UIAlertController(title: "Alerta", message: text, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: .destructive, handler: { action in
+
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     func getLaunches(_ model: [LaunchPastQuery.Data.LaunchesPast]) {
         launches = model
         tableView.reloadData()

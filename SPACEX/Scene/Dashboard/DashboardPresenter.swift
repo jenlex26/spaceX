@@ -34,7 +34,10 @@ class DashboardPresenter: DashboardViewToPresenterProtocol  {
     }
     
     func getFullData() {
-        view?.getLaunches(data!)
+        guard let dat = data else {
+            return
+        }
+        view?.getLaunches(dat)
     }
     
     func filterData(_ searchParameter: String) {
@@ -43,6 +46,12 @@ class DashboardPresenter: DashboardViewToPresenterProtocol  {
 }
 
 extension DashboardPresenter: DashboardInteractorToPresenterProtocol {
+    func showError() {
+        router?.stopAlertActivity(completion: {
+            self.view?.showAlert("No hay datos para mostrar")
+        })
+    }
+    
     func fecthFilter(list: [LaunchPastQuery.Data.LaunchesPast]?) {
         if let filterSource = list {
             if filterSource.count == 0 {
